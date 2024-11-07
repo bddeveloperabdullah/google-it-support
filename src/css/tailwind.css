@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .top-menu {
+    @apply hover:text-[#F44335] hover:scale-95 transition-all duration-300 text-xs md:text-base;
+  }
+}
