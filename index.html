@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google It Support</title>
+    <!-- Font Awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+    />
     <!-- Tailwind Css  -->
     <link rel="stylesheet" href="./src/css/tailwind.css" />
   </head>
@@ -350,17 +355,28 @@
       <!-- Course Area 1  -->
       <section class="bg-[#FAFAFA] md:mx-14 mt-32">
         <div
-          class="bg-white overflow-hidden container mx-auto flex gap-5 md:gap-7 border rounded-2xl"
+          class="bg-white overflow-hidden container mx-auto flex flex-col md:flex-row gap-5 md:gap-7 border rounded-2xl shadow-md"
         >
           <!-- Left Content  -->
-          <div class="bg-[#2D3142] w-1/2">
+          <div class="bg-[#2D3142]">
+            <!-- Course Small Title  -->
             <p class="text-sm md:text-lg pt-3 ml-5 text-[#00FF84]">Course 1</p>
+
+            <!-- Course Title Sm Device  -->
             <h2
-              class="text-white text-2xl ml-5 md:text-5xl font-semibold py-2 md:py-5"
+              class="text-white text-2xl sm:block md:hidden ml-5 md:text-4xl font-semibold py-2 md:py-5"
             >
-              Technical <br />
-              Support <br />
-              Fundamentals
+              Operating Systems and You: Becoming a Power User
+            </h2>
+
+            <!-- Course Title Md Device  -->
+            <h2
+              class="text-white text-2xl hidden md:block ml-5 md:text-4xl font-semibold py-2 md:py-5"
+            >
+              Operating <br />
+              Systems and <br />
+              You: Becoming <br />
+              a Power User
             </h2>
             <!-- Rating Area  -->
             <div class="ml-5 flex items-center gap-3 md:gap-5">
@@ -386,7 +402,20 @@
                 Next
               </button>
             </div>
-            <p class="w-[310px] text-xs md:text-sm text-white pt-52 ml-5 pb-10">
+            <!-- Course Paragraph Sm Device  -->
+            <p
+              class="w-96 md:hidden text-xs md:text-sm text-white mt-5 ml-5 pb-10"
+            >
+              When you complete all of the courses in the program, you'll earn a
+              Certificate to share with your professional network as well as
+              unlock access to career support resources to help you kickstart
+              your new career.
+            </p>
+
+            <!-- Course Paragraph Md lg Device  -->
+            <p
+              class="w-[310px] text-xs hidden md:block md:text-sm text-white mt-20 ml-5 pb-10 lg:mt-[500px]"
+            >
               When you complete all of the courses in the program, you'll earn a
               Certificate to share with your professional network as well as
               unlock access to career support resources to help you kickstart
@@ -395,37 +424,1179 @@
           </div>
 
           <!-- Right Content  -->
-          <div class="pr-5 pt-3">
-            <p>
+          <div class="pr-5 sm:-mt-2 md:pt-3 ml-5">
+            <!-- Title Area 1 -->
+            <h3
+              class="text-base sm:-mb-3 md:pb-4 md:text-2xl font-semibold text-[#F9CCC7]"
+            >
+              About this course
+            </h3>
+
+            <!-- Course Paragraph  -->
+            <p class="text-[#072125] text-sm md:text-base py-5">
+              This course is the first of a series that aims to prepare you for
+              a role as an entry-level IT Support Specialist. In this course,
+              you’ll be introduced to the world of Information Technology, or
+              IT. You’ll learn about the different facets of Information
+              Technology, like computer hardware, the Internet, computer
+              software, troubleshooting, and customer service. This course
+              covers a wide variety of topics in IT that are designed to give
+              you an overview of what’s to come in this certificate program.
+            </p>
+
+            <!-- Title Area 2  -->
+            <h3
+              class="text-base md:text-2xl font-semibold text-[#F9CCC7] sm:-mt-3 sm:mb-2 lg:mt-5 lg:mb-7"
+            >
+              What you will learn
+            </h3>
+
+            <!-- Course List Area  -->
+            <div class="flex flex-col gap-2 md:gap-5 mb-10">
+              <div class="flex items-center gap-3">
+                <img
+                  class="md:w-8 sm:w-5"
+                  src="./image/Checkmark (1).png"
+                  alt=""
+                />
+                <p class="text-xs md:text-base font-semibold">
+                  Navigate the Windows and Linux filesystems using a graphical
+                  user interface and command line interpreter
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <img
+                  class="md:w-8 sm:w-5"
+                  src="./image/Checkmark (1).png"
+                  alt=""
+                />
+                <p class="text-xs md:text-base font-semibold">
+                  Set up users, groups, and permissions for account access
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <img
+                  class="md:w-8 sm:w-5"
+                  src="./image/Checkmark (1).png"
+                  alt=""
+                />
+                <p class="text-xs md:text-base font-semibold">
+                  Install, configure, and remove software on the Windows and
+                  Linux operating systems
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <img
+                  class="md:w-8 sm:w-5"
+                  src="./image/Checkmark (1).png"
+                  alt=""
+                />
+                <p class="text-xs md:text-base font-semibold">
+                  Configure disk partitions and filesystems
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <img
+                  class="md:w-8 sm:w-5"
+                  src="./image/Checkmark (1).png"
+                  alt=""
+                />
+                <p class="text-xs md:text-base font-semibold">
+                  Understand how system processes work and how to manage them
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <img
+                  class="md:w-8 sm:w-5"
+                  src="./image/Checkmark (1).png"
+                  alt=""
+                />
+                <p class="text-xs md:text-base font-semibold">
+                  work with system logs and remote connection tools
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <img
+                  class="md:w-8 sm:w-5"
+                  src="./image/Checkmark (1).png"
+                  alt=""
+                />
+                <p class="text-xs md:text-base font-semibold">
+                  work with system logs and remote connection tools
+                </p>
+              </div>
+            </div>
+
+            <!-- Title Area 3  -->
+            <h3
+              class="text-base md:text-2xl font-semibold text-[#F9CCC7] mb-5 mt-5 sm:-mt-5 lg:mt-5 lg:mb-7"
+            >
+              Skills you will gain
+            </h3>
+            <!-- Course Skill  -->
+            <div class="flex flex-wrap items-center gap-5 -mt-2 pb-10">
+              <p class="custom-p">Debugging</p>
+              <p class="custom-p">Troubleshooting</p>
+              <p class="custom-p">Customer Service</p>
+              <p class="custom-p">Linux</p>
+            </div>
+
+            <!-- Title Area 4  -->
+            <h3
+              class="text-base md:text-2xl font-semibold text-[#F9CCC7] mb-5 sm:-mt-5"
+            >
+              Information
+            </h3>
+
+            <!-- Course List Item  -->
+            <div
+              class="flex flex-col gap-1 md:gap-3 -mt-2 pb-2 md:pb-10 sm:pb-11"
+            >
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-circle-dot text-[8px] text-[#F9CCC7]"></i>
+                <p class="text-sm md:text-base font-semibold">
+                  Flexible deadlines
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-circle-dot text-[8px] text-[#F9CCC7]"></i>
+                <p class="text-sm md:text-base font-semibold">
+                  Shareable Certificate
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-circle-dot text-[8px] text-[#F9CCC7]"></i>
+                <p class="text-sm md:text-base font-semibold">100% online</p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-circle-dot text-[8px] text-[#F9CCC7]"></i>
+                <p class="text-sm md:text-base font-semibold">Beginner Level</p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-circle-dot text-[8px] text-[#F9CCC7]"></i>
+                <p class="text-sm md:text-base font-semibold">
+                  Approx. 31 hours to complete
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Line Arror 1 -->
+      <section class="relative">
+        <div class="container mx-auto">
+          <img
+            class="absolute left-40 w-72 md:w-96 lg:-mt-44 lg:w-fit"
+            src="./image/Connector Vector.png"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <!-- Course Area 2  -->
+      <section class="bg-[#FAFAFA] md:mx-14 mt-36 sm:mt-28 lg:mt-[180px]">
+        <div
+          class="bg-white overflow-hidden container mx-auto flex flex-col md:flex-row gap-5 md:gap-7 border rounded-2xl shadow-md"
+        >
+          <!-- Left Content  -->
+          <div class="bg-[#2D3142]">
+            <!-- Course Small Title  -->
+            <p class="text-sm md:text-lg pt-3 ml-5 text-[#00FF84]">Course 2</p>
+
+            <!-- Course Title Sm Device  -->
+            <h2
+              class="text-white text-2xl sm:block md:hidden ml-5 md:text-4xl font-semibold py-2 md:py-5"
+            >
+              Operating Systems and You: Becoming a Power User
+            </h2>
+
+            <!-- Course Title Md Device  -->
+            <h2
+              class="text-white text-2xl hidden md:block ml-5 md:text-4xl font-semibold py-2 md:py-5"
+            >
+              Operating <br />
+              Systems and <br />
+              You: Becoming <br />
+              a Power User
+            </h2>
+            <!-- Rating Area  -->
+            <div class="ml-5 flex items-center gap-3 md:gap-5">
+              <p class="text-[#00FF84]">132,411 ratings</p>
+              <!-- Star  -->
+              <div class="flex items-center">
+                <img
+                  class="mt-2.5 w-fit md:w-24 md:mt-4"
+                  src="./image/Stars.png"
+                  alt=""
+                />
+                <p class="text-base font-semibold text-[#FFCB45]">4.8</p>
+              </div>
+            </div>
+            <!-- Twin Btn  -->
+            <div class="ml-5 py-5">
+              <button
+                class="bg-[#F44335] text-white py-1 px-2 md:px-5 rounded-md mr-2"
+              >
+                Sign Up
+              </button>
+              <button class="bg-white py-1 px-2 md:px-6 rounded-md">
+                Next
+              </button>
+            </div>
+            <!-- Course Paragraph Sm Device  -->
+            <p
+              class="w-96 md:hidden text-xs md:text-sm text-white mt-5 ml-5 pb-10"
+            >
               When you complete all of the courses in the program, you'll earn a
               Certificate to share with your professional network as well as
               unlock access to career support resources to help you kickstart
               your new career.
             </p>
-            <p>
+
+            <!-- Course Paragraph Md lg Device  -->
+            <p
+              class="w-[310px] text-xs hidden md:block md:text-sm text-white mt-20 ml-5 pb-10 lg:mt-[500px]"
+            >
               When you complete all of the courses in the program, you'll earn a
               Certificate to share with your professional network as well as
               unlock access to career support resources to help you kickstart
               your new career.
             </p>
-            <p>
+          </div>
+
+          <!-- Right Content  -->
+          <div class="pr-5 sm:-mt-2 md:pt-3 ml-5">
+            <!-- Title Area 1 -->
+            <h3
+              class="text-base sm:-mb-3 md:pb-4 md:text-2xl font-semibold text-[#F9CCC7]"
+            >
+              About this course
+            </h3>
+
+            <!-- Course Paragraph  -->
+            <p class="text-[#072125] text-sm md:text-base py-5">
+              This course is the first of a series that aims to prepare you for
+              a role as an entry-level IT Support Specialist. In this course,
+              you’ll be introduced to the world of Information Technology, or
+              IT. You’ll learn about the different facets of Information
+              Technology, like computer hardware, the Internet, computer
+              software, troubleshooting, and customer service. This course
+              covers a wide variety of topics in IT that are designed to give
+              you an overview of what’s to come in this certificate program.
+            </p>
+
+            <!-- Title Area 2  -->
+            <h3
+              class="text-base md:text-2xl font-semibold text-[#F9CCC7] sm:-mt-3 sm:mb-2 lg:mt-5 lg:mb-7"
+            >
+              What you will learn
+            </h3>
+
+            <!-- Course List Area  -->
+            <div class="flex flex-col gap-2 md:gap-5 mb-10">
+              <div class="flex items-center gap-3">
+                <img
+                  class="md:w-8 sm:w-5"
+                  src="./image/Checkmark (1).png"
+                  alt=""
+                />
+                <p class="text-xs md:text-base font-semibold">
+                  Navigate the Windows and Linux filesystems using a graphical
+                  user interface and command line interpreter
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <img
+                  class="md:w-8 sm:w-5"
+                  src="./image/Checkmark (1).png"
+                  alt=""
+                />
+                <p class="text-xs md:text-base font-semibold">
+                  Set up users, groups, and permissions for account access
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <img
+                  class="md:w-8 sm:w-5"
+                  src="./image/Checkmark (1).png"
+                  alt=""
+                />
+                <p class="text-xs md:text-base font-semibold">
+                  Install, configure, and remove software on the Windows and
+                  Linux operating systems
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <img
+                  class="md:w-8 sm:w-5"
+                  src="./image/Checkmark (1).png"
+                  alt=""
+                />
+                <p class="text-xs md:text-base font-semibold">
+                  Configure disk partitions and filesystems
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <img
+                  class="md:w-8 sm:w-5"
+                  src="./image/Checkmark (1).png"
+                  alt=""
+                />
+                <p class="text-xs md:text-base font-semibold">
+                  Understand how system processes work and how to manage them
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <img
+                  class="md:w-8 sm:w-5"
+                  src="./image/Checkmark (1).png"
+                  alt=""
+                />
+                <p class="text-xs md:text-base font-semibold">
+                  work with system logs and remote connection tools
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <img
+                  class="md:w-8 sm:w-5"
+                  src="./image/Checkmark (1).png"
+                  alt=""
+                />
+                <p class="text-xs md:text-base font-semibold">
+                  work with system logs and remote connection tools
+                </p>
+              </div>
+            </div>
+
+            <!-- Title Area 3  -->
+            <h3
+              class="text-base md:text-2xl font-semibold text-[#F9CCC7] mb-5 mt-5 sm:-mt-5 lg:mt-5 lg:mb-7"
+            >
+              Skills you will gain
+            </h3>
+            <!-- Course Skill  -->
+            <div class="flex flex-wrap items-center gap-5 -mt-2 pb-10">
+              <p class="custom-p">Debugging</p>
+              <p class="custom-p">Troubleshooting</p>
+              <p class="custom-p">Customer Service</p>
+              <p class="custom-p">Linux</p>
+            </div>
+
+            <!-- Title Area 4  -->
+            <h3
+              class="text-base md:text-2xl font-semibold text-[#F9CCC7] mb-5 sm:-mt-5"
+            >
+              Information
+            </h3>
+
+            <!-- Course List Item  -->
+            <div
+              class="flex flex-col gap-1 md:gap-3 -mt-2 pb-2 md:pb-10 sm:pb-11"
+            >
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-circle-dot text-[8px] text-[#F9CCC7]"></i>
+                <p class="text-sm md:text-base font-semibold">
+                  Flexible deadlines
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-circle-dot text-[8px] text-[#F9CCC7]"></i>
+                <p class="text-sm md:text-base font-semibold">
+                  Shareable Certificate
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-circle-dot text-[8px] text-[#F9CCC7]"></i>
+                <p class="text-sm md:text-base font-semibold">100% online</p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-circle-dot text-[8px] text-[#F9CCC7]"></i>
+                <p class="text-sm md:text-base font-semibold">Beginner Level</p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-circle-dot text-[8px] text-[#F9CCC7]"></i>
+                <p class="text-sm md:text-base font-semibold">
+                  Approx. 31 hours to complete
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Line Arror 2 -->
+      <section class="relative">
+        <div class="container mx-auto">
+          <img
+            class="absolute left-40 w-72 md:w-96 lg:w-fit"
+            src="./image/Connector Vector (1).png"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <!-- Course Area 3  -->
+      <section class="bg-[#FAFAFA] md:mx-14 mt-28 md:mt-[150px] lg:mt-96">
+        <div
+          class="bg-white overflow-hidden container mx-auto flex flex-col md:flex-row gap-5 md:gap-7 border rounded-2xl shadow-md"
+        >
+          <!-- Left Content  -->
+          <div class="bg-[#2D3142]">
+            <!-- Course Small Title  -->
+            <p class="text-sm md:text-lg pt-3 ml-5 text-[#00FF84]">Course 3</p>
+
+            <!-- Course Title Sm Device  -->
+            <h2
+              class="text-white text-2xl sm:block md:hidden ml-5 md:text-4xl font-semibold py-2 md:py-5"
+            >
+              Operating Systems and You: Becoming a Power User
+            </h2>
+
+            <!-- Course Title Md Device  -->
+            <h2
+              class="text-white text-2xl hidden md:block ml-5 md:text-4xl font-semibold py-2 md:py-5"
+            >
+              Operating <br />
+              Systems and <br />
+              You: Becoming <br />
+              a Power User
+            </h2>
+            <!-- Rating Area  -->
+            <div class="ml-5 flex items-center gap-3 md:gap-5">
+              <p class="text-[#00FF84]">132,411 ratings</p>
+              <!-- Star  -->
+              <div class="flex items-center">
+                <img
+                  class="mt-2.5 w-fit md:w-24 md:mt-4"
+                  src="./image/Stars.png"
+                  alt=""
+                />
+                <p class="text-base font-semibold text-[#FFCB45]">4.8</p>
+              </div>
+            </div>
+            <!-- Twin Btn  -->
+            <div class="ml-5 py-5">
+              <button
+                class="bg-[#F44335] text-white py-1 px-2 md:px-5 rounded-md mr-2"
+              >
+                Sign Up
+              </button>
+              <button class="bg-white py-1 px-2 md:px-6 rounded-md">
+                Next
+              </button>
+            </div>
+            <!-- Course Paragraph Sm Device  -->
+            <p
+              class="w-96 md:hidden text-xs md:text-sm text-white mt-5 ml-5 pb-10"
+            >
               When you complete all of the courses in the program, you'll earn a
               Certificate to share with your professional network as well as
               unlock access to career support resources to help you kickstart
               your new career.
             </p>
-            <p>
+
+            <!-- Course Paragraph Md lg Device  -->
+            <p
+              class="w-[310px] text-xs hidden md:block md:text-sm text-white mt-20 ml-5 pb-10 lg:mt-[500px]"
+            >
               When you complete all of the courses in the program, you'll earn a
               Certificate to share with your professional network as well as
               unlock access to career support resources to help you kickstart
               your new career.
             </p>
-            <p>
+          </div>
+
+          <!-- Right Content  -->
+          <div class="pr-5 sm:-mt-2 md:pt-3 ml-5">
+            <!-- Title Area 1 -->
+            <h3
+              class="text-base sm:-mb-3 md:pb-4 md:text-2xl font-semibold text-[#F9CCC7]"
+            >
+              About this course
+            </h3>
+
+            <!-- Course Paragraph  -->
+            <p class="text-[#072125] text-sm md:text-base py-5">
+              This course is the first of a series that aims to prepare you for
+              a role as an entry-level IT Support Specialist. In this course,
+              you’ll be introduced to the world of Information Technology, or
+              IT. You’ll learn about the different facets of Information
+              Technology, like computer hardware, the Internet, computer
+              software, troubleshooting, and customer service. This course
+              covers a wide variety of topics in IT that are designed to give
+              you an overview of what’s to come in this certificate program.
+            </p>
+
+            <!-- Title Area 2  -->
+            <h3
+              class="text-base md:text-2xl font-semibold text-[#F9CCC7] sm:-mt-3 sm:mb-2 lg:mt-5 lg:mb-7"
+            >
+              What you will learn
+            </h3>
+
+            <!-- Course List Area  -->
+            <div class="flex flex-col gap-2 md:gap-5 mb-10">
+              <div class="flex items-center gap-3">
+                <img
+                  class="md:w-8 sm:w-5"
+                  src="./image/Checkmark (1).png"
+                  alt=""
+                />
+                <p class="text-xs md:text-base font-semibold">
+                  Navigate the Windows and Linux filesystems using a graphical
+                  user interface and command line interpreter
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <img
+                  class="md:w-8 sm:w-5"
+                  src="./image/Checkmark (1).png"
+                  alt=""
+                />
+                <p class="text-xs md:text-base font-semibold">
+                  Set up users, groups, and permissions for account access
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <img
+                  class="md:w-8 sm:w-5"
+                  src="./image/Checkmark (1).png"
+                  alt=""
+                />
+                <p class="text-xs md:text-base font-semibold">
+                  Install, configure, and remove software on the Windows and
+                  Linux operating systems
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <img
+                  class="md:w-8 sm:w-5"
+                  src="./image/Checkmark (1).png"
+                  alt=""
+                />
+                <p class="text-xs md:text-base font-semibold">
+                  Configure disk partitions and filesystems
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <img
+                  class="md:w-8 sm:w-5"
+                  src="./image/Checkmark (1).png"
+                  alt=""
+                />
+                <p class="text-xs md:text-base font-semibold">
+                  Understand how system processes work and how to manage them
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <img
+                  class="md:w-8 sm:w-5"
+                  src="./image/Checkmark (1).png"
+                  alt=""
+                />
+                <p class="text-xs md:text-base font-semibold">
+                  work with system logs and remote connection tools
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <img
+                  class="md:w-8 sm:w-5"
+                  src="./image/Checkmark (1).png"
+                  alt=""
+                />
+                <p class="text-xs md:text-base font-semibold">
+                  work with system logs and remote connection tools
+                </p>
+              </div>
+            </div>
+
+            <!-- Title Area 3  -->
+            <h3
+              class="text-base md:text-2xl font-semibold text-[#F9CCC7] mb-5 mt-5 sm:-mt-5 lg:mt-5 lg:mb-7"
+            >
+              Skills you will gain
+            </h3>
+            <!-- Course Skill  -->
+            <div class="flex flex-wrap items-center gap-5 -mt-2 pb-10">
+              <p class="custom-p">Debugging</p>
+              <p class="custom-p">Troubleshooting</p>
+              <p class="custom-p">Customer Service</p>
+              <p class="custom-p">Linux</p>
+            </div>
+
+            <!-- Title Area 4  -->
+            <h3
+              class="text-base md:text-2xl font-semibold text-[#F9CCC7] mb-5 sm:-mt-5"
+            >
+              Information
+            </h3>
+
+            <!-- Course List Item  -->
+            <div
+              class="flex flex-col gap-1 md:gap-3 -mt-2 pb-2 md:pb-10 sm:pb-11"
+            >
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-circle-dot text-[8px] text-[#F9CCC7]"></i>
+                <p class="text-sm md:text-base font-semibold">
+                  Flexible deadlines
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-circle-dot text-[8px] text-[#F9CCC7]"></i>
+                <p class="text-sm md:text-base font-semibold">
+                  Shareable Certificate
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-circle-dot text-[8px] text-[#F9CCC7]"></i>
+                <p class="text-sm md:text-base font-semibold">100% online</p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-circle-dot text-[8px] text-[#F9CCC7]"></i>
+                <p class="text-sm md:text-base font-semibold">Beginner Level</p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-circle-dot text-[8px] text-[#F9CCC7]"></i>
+                <p class="text-sm md:text-base font-semibold">
+                  Approx. 31 hours to complete
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Line Arror 3 -->
+      <section class="relative">
+        <div class="container mx-auto">
+          <img
+            class="absolute left-40 w-72 md:w-96 lg:w-fit"
+            src="./image/Connector Vector (1).png"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <!-- Course Area 4  -->
+      <section class="bg-[#FAFAFA] md:mx-14 mt-28 md:mt-[150px] lg:mt-96">
+        <div
+          class="bg-white overflow-hidden container mx-auto flex flex-col md:flex-row gap-5 md:gap-7 border rounded-2xl shadow-md"
+        >
+          <!-- Left Content  -->
+          <div class="bg-[#2D3142]">
+            <!-- Course Small Title  -->
+            <p class="text-sm md:text-lg pt-3 ml-5 text-[#00FF84]">Course 4</p>
+
+            <!-- Course Title Sm Device  -->
+            <h2
+              class="text-white text-2xl sm:block md:hidden ml-5 md:text-4xl font-semibold py-2 md:py-5"
+            >
+              Operating Systems and You: Becoming a Power User
+            </h2>
+
+            <!-- Course Title Md Device  -->
+            <h2
+              class="text-white text-2xl hidden md:block ml-5 md:text-4xl font-semibold py-2 md:py-5"
+            >
+              Operating <br />
+              Systems and <br />
+              You: Becoming <br />
+              a Power User
+            </h2>
+            <!-- Rating Area  -->
+            <div class="ml-5 flex items-center gap-3 md:gap-5">
+              <p class="text-[#00FF84]">132,411 ratings</p>
+              <!-- Star  -->
+              <div class="flex items-center">
+                <img
+                  class="mt-2.5 w-fit md:w-24 md:mt-4"
+                  src="./image/Stars.png"
+                  alt=""
+                />
+                <p class="text-base font-semibold text-[#FFCB45]">4.8</p>
+              </div>
+            </div>
+            <!-- Twin Btn  -->
+            <div class="ml-5 py-5">
+              <button
+                class="bg-[#F44335] text-white py-1 px-2 md:px-5 rounded-md mr-2"
+              >
+                Sign Up
+              </button>
+              <button class="bg-white py-1 px-2 md:px-6 rounded-md">
+                Next
+              </button>
+            </div>
+            <!-- Course Paragraph Sm Device  -->
+            <p
+              class="w-96 md:hidden text-xs md:text-sm text-white mt-5 ml-5 pb-10"
+            >
               When you complete all of the courses in the program, you'll earn a
               Certificate to share with your professional network as well as
               unlock access to career support resources to help you kickstart
               your new career.
             </p>
+
+            <!-- Course Paragraph Md lg Device  -->
+            <p
+              class="w-[310px] text-xs hidden md:block md:text-sm text-white mt-20 ml-5 pb-10 lg:mt-[500px]"
+            >
+              When you complete all of the courses in the program, you'll earn a
+              Certificate to share with your professional network as well as
+              unlock access to career support resources to help you kickstart
+              your new career.
+            </p>
+          </div>
+
+          <!-- Right Content  -->
+          <div class="pr-5 sm:-mt-2 md:pt-3 ml-5">
+            <!-- Title Area 1 -->
+            <h3
+              class="text-base sm:-mb-3 md:pb-4 md:text-2xl font-semibold text-[#F9CCC7]"
+            >
+              About this course
+            </h3>
+
+            <!-- Course Paragraph  -->
+            <p class="text-[#072125] text-sm md:text-base py-5">
+              This course is the first of a series that aims to prepare you for
+              a role as an entry-level IT Support Specialist. In this course,
+              you’ll be introduced to the world of Information Technology, or
+              IT. You’ll learn about the different facets of Information
+              Technology, like computer hardware, the Internet, computer
+              software, troubleshooting, and customer service. This course
+              covers a wide variety of topics in IT that are designed to give
+              you an overview of what’s to come in this certificate program.
+            </p>
+
+            <!-- Title Area 2  -->
+            <h3
+              class="text-base md:text-2xl font-semibold text-[#F9CCC7] sm:-mt-3 sm:mb-2 lg:mt-5 lg:mb-7"
+            >
+              What you will learn
+            </h3>
+
+            <!-- Course List Area  -->
+            <div class="flex flex-col gap-2 md:gap-5 mb-10">
+              <div class="flex items-center gap-3">
+                <img
+                  class="md:w-8 sm:w-5"
+                  src="./image/Checkmark (1).png"
+                  alt=""
+                />
+                <p class="text-xs md:text-base font-semibold">
+                  Navigate the Windows and Linux filesystems using a graphical
+                  user interface and command line interpreter
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <img
+                  class="md:w-8 sm:w-5"
+                  src="./image/Checkmark (1).png"
+                  alt=""
+                />
+                <p class="text-xs md:text-base font-semibold">
+                  Set up users, groups, and permissions for account access
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <img
+                  class="md:w-8 sm:w-5"
+                  src="./image/Checkmark (1).png"
+                  alt=""
+                />
+                <p class="text-xs md:text-base font-semibold">
+                  Install, configure, and remove software on the Windows and
+                  Linux operating systems
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <img
+                  class="md:w-8 sm:w-5"
+                  src="./image/Checkmark (1).png"
+                  alt=""
+                />
+                <p class="text-xs md:text-base font-semibold">
+                  Configure disk partitions and filesystems
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <img
+                  class="md:w-8 sm:w-5"
+                  src="./image/Checkmark (1).png"
+                  alt=""
+                />
+                <p class="text-xs md:text-base font-semibold">
+                  Understand how system processes work and how to manage them
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <img
+                  class="md:w-8 sm:w-5"
+                  src="./image/Checkmark (1).png"
+                  alt=""
+                />
+                <p class="text-xs md:text-base font-semibold">
+                  work with system logs and remote connection tools
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <img
+                  class="md:w-8 sm:w-5"
+                  src="./image/Checkmark (1).png"
+                  alt=""
+                />
+                <p class="text-xs md:text-base font-semibold">
+                  work with system logs and remote connection tools
+                </p>
+              </div>
+            </div>
+
+            <!-- Title Area 3  -->
+            <h3
+              class="text-base md:text-2xl font-semibold text-[#F9CCC7] mb-5 mt-5 sm:-mt-5 lg:mt-5 lg:mb-7"
+            >
+              Skills you will gain
+            </h3>
+            <!-- Course Skill  -->
+            <div class="flex flex-wrap items-center gap-5 -mt-2 pb-10">
+              <p class="custom-p">Debugging</p>
+              <p class="custom-p">Troubleshooting</p>
+              <p class="custom-p">Customer Service</p>
+              <p class="custom-p">Linux</p>
+            </div>
+
+            <!-- Title Area 4  -->
+            <h3
+              class="text-base md:text-2xl font-semibold text-[#F9CCC7] mb-5 sm:-mt-5"
+            >
+              Information
+            </h3>
+
+            <!-- Course List Item  -->
+            <div
+              class="flex flex-col gap-1 md:gap-3 -mt-2 pb-2 md:pb-10 sm:pb-11"
+            >
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-circle-dot text-[8px] text-[#F9CCC7]"></i>
+                <p class="text-sm md:text-base font-semibold">
+                  Flexible deadlines
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-circle-dot text-[8px] text-[#F9CCC7]"></i>
+                <p class="text-sm md:text-base font-semibold">
+                  Shareable Certificate
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-circle-dot text-[8px] text-[#F9CCC7]"></i>
+                <p class="text-sm md:text-base font-semibold">100% online</p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-circle-dot text-[8px] text-[#F9CCC7]"></i>
+                <p class="text-sm md:text-base font-semibold">Beginner Level</p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-circle-dot text-[8px] text-[#F9CCC7]"></i>
+                <p class="text-sm md:text-base font-semibold">
+                  Approx. 31 hours to complete
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Line Arror 4 -->
+      <section class="relative">
+        <div class="container mx-auto">
+          <img
+            class="absolute left-40 w-72 md:w-96 lg:-mt-44 lg:w-fit"
+            src="./image/Connector Vector.png"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <!-- Course Area 5  -->
+      <section class="bg-[#FAFAFA] md:mx-14 mt-36 sm:mt-28 lg:mt-[180px]">
+        <div
+          class="bg-white overflow-hidden container mx-auto flex flex-col md:flex-row gap-5 md:gap-7 border rounded-2xl shadow-md"
+        >
+          <!-- Left Content  -->
+          <div class="bg-[#2D3142]">
+            <!-- Course Small Title  -->
+            <p class="text-sm md:text-lg pt-3 ml-5 text-[#00FF84]">Course 5</p>
+
+            <!-- Course Title Sm Device  -->
+            <h2
+              class="text-white text-2xl sm:block md:hidden ml-5 md:text-4xl font-semibold py-2 md:py-5"
+            >
+              Operating Systems and You: Becoming a Power User
+            </h2>
+
+            <!-- Course Title Md Device  -->
+            <h2
+              class="text-white text-2xl hidden md:block ml-5 md:text-4xl font-semibold py-2 md:py-5"
+            >
+              Operating <br />
+              Systems and <br />
+              You: Becoming <br />
+              a Power User
+            </h2>
+            <!-- Rating Area  -->
+            <div class="ml-5 flex items-center gap-3 md:gap-5">
+              <p class="text-[#00FF84]">132,411 ratings</p>
+              <!-- Star  -->
+              <div class="flex items-center">
+                <img
+                  class="mt-2.5 w-fit md:w-24 md:mt-4"
+                  src="./image/Stars.png"
+                  alt=""
+                />
+                <p class="text-base font-semibold text-[#FFCB45]">4.8</p>
+              </div>
+            </div>
+            <!-- Twin Btn  -->
+            <div class="ml-5 py-5">
+              <button
+                class="bg-[#F44335] text-white py-1 px-2 md:px-5 rounded-md mr-2"
+              >
+                Sign Up
+              </button>
+              <button class="bg-white py-1 px-2 md:px-6 rounded-md">
+                Next
+              </button>
+            </div>
+            <!-- Course Paragraph Sm Device  -->
+            <p
+              class="w-96 md:hidden text-xs md:text-sm text-white mt-5 ml-5 pb-10"
+            >
+              When you complete all of the courses in the program, you'll earn a
+              Certificate to share with your professional network as well as
+              unlock access to career support resources to help you kickstart
+              your new career.
+            </p>
+
+            <!-- Course Paragraph Md lg Device  -->
+            <p
+              class="w-[310px] text-xs hidden md:block md:text-sm text-white mt-20 ml-5 pb-10 lg:mt-[500px]"
+            >
+              When you complete all of the courses in the program, you'll earn a
+              Certificate to share with your professional network as well as
+              unlock access to career support resources to help you kickstart
+              your new career.
+            </p>
+          </div>
+
+          <!-- Right Content  -->
+          <div class="pr-5 sm:-mt-2 md:pt-3 ml-5">
+            <!-- Title Area 1 -->
+            <h3
+              class="text-base sm:-mb-3 md:pb-4 md:text-2xl font-semibold text-[#F9CCC7]"
+            >
+              About this course
+            </h3>
+
+            <!-- Course Paragraph  -->
+            <p class="text-[#072125] text-sm md:text-base py-5">
+              This course is the first of a series that aims to prepare you for
+              a role as an entry-level IT Support Specialist. In this course,
+              you’ll be introduced to the world of Information Technology, or
+              IT. You’ll learn about the different facets of Information
+              Technology, like computer hardware, the Internet, computer
+              software, troubleshooting, and customer service. This course
+              covers a wide variety of topics in IT that are designed to give
+              you an overview of what’s to come in this certificate program.
+            </p>
+
+            <!-- Title Area 2  -->
+            <h3
+              class="text-base md:text-2xl font-semibold text-[#F9CCC7] sm:-mt-3 sm:mb-2 lg:mt-5 lg:mb-7"
+            >
+              What you will learn
+            </h3>
+
+            <!-- Course List Area  -->
+            <div class="flex flex-col gap-2 md:gap-5 mb-10">
+              <div class="flex items-center gap-3">
+                <img
+                  class="md:w-8 sm:w-5"
+                  src="./image/Checkmark (1).png"
+                  alt=""
+                />
+                <p class="text-xs md:text-base font-semibold">
+                  Navigate the Windows and Linux filesystems using a graphical
+                  user interface and command line interpreter
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <img
+                  class="md:w-8 sm:w-5"
+                  src="./image/Checkmark (1).png"
+                  alt=""
+                />
+                <p class="text-xs md:text-base font-semibold">
+                  Set up users, groups, and permissions for account access
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <img
+                  class="md:w-8 sm:w-5"
+                  src="./image/Checkmark (1).png"
+                  alt=""
+                />
+                <p class="text-xs md:text-base font-semibold">
+                  Install, configure, and remove software on the Windows and
+                  Linux operating systems
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <img
+                  class="md:w-8 sm:w-5"
+                  src="./image/Checkmark (1).png"
+                  alt=""
+                />
+                <p class="text-xs md:text-base font-semibold">
+                  Configure disk partitions and filesystems
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <img
+                  class="md:w-8 sm:w-5"
+                  src="./image/Checkmark (1).png"
+                  alt=""
+                />
+                <p class="text-xs md:text-base font-semibold">
+                  Understand how system processes work and how to manage them
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <img
+                  class="md:w-8 sm:w-5"
+                  src="./image/Checkmark (1).png"
+                  alt=""
+                />
+                <p class="text-xs md:text-base font-semibold">
+                  work with system logs and remote connection tools
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <img
+                  class="md:w-8 sm:w-5"
+                  src="./image/Checkmark (1).png"
+                  alt=""
+                />
+                <p class="text-xs md:text-base font-semibold">
+                  work with system logs and remote connection tools
+                </p>
+              </div>
+            </div>
+
+            <!-- Title Area 3  -->
+            <h3
+              class="text-base md:text-2xl font-semibold text-[#F9CCC7] mb-5 mt-5 sm:-mt-5 lg:mt-5 lg:mb-7"
+            >
+              Skills you will gain
+            </h3>
+            <!-- Course Skill  -->
+            <div class="flex flex-wrap items-center gap-5 -mt-2 pb-10">
+              <p class="custom-p">Debugging</p>
+              <p class="custom-p">Troubleshooting</p>
+              <p class="custom-p">Customer Service</p>
+              <p class="custom-p">Linux</p>
+            </div>
+
+            <!-- Title Area 4  -->
+            <h3
+              class="text-base md:text-2xl font-semibold text-[#F9CCC7] mb-5 sm:-mt-5"
+            >
+              Information
+            </h3>
+
+            <!-- Course List Item  -->
+            <div
+              class="flex flex-col gap-1 md:gap-3 -mt-2 pb-2 md:pb-10 sm:pb-11"
+            >
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-circle-dot text-[8px] text-[#F9CCC7]"></i>
+                <p class="text-sm md:text-base font-semibold">
+                  Flexible deadlines
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-circle-dot text-[8px] text-[#F9CCC7]"></i>
+                <p class="text-sm md:text-base font-semibold">
+                  Shareable Certificate
+                </p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-circle-dot text-[8px] text-[#F9CCC7]"></i>
+                <p class="text-sm md:text-base font-semibold">100% online</p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-circle-dot text-[8px] text-[#F9CCC7]"></i>
+                <p class="text-sm md:text-base font-semibold">Beginner Level</p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-circle-dot text-[8px] text-[#F9CCC7]"></i>
+                <p class="text-sm md:text-base font-semibold">
+                  Approx. 31 hours to complete
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
