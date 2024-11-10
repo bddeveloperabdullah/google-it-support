@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark" id="htmlTag">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,7 +12,7 @@
     <!-- Tailwind Css  -->
     <link rel="stylesheet" href="./src/css/tailwind.css" />
   </head>
-  <body>
+  <body class="bg-white dark:bg-[#2D3142]">
     <!-- Header Area Start  -->
     <header class="mt-2 lg:mx-10">
       <div
@@ -23,7 +23,7 @@
           <img class="w-14 md:w-fit" src="./image/logo.png" alt="" />
         </div>
         <!-- Menu Area  -->
-        <div>
+        <div class="dark:text-white">
           <ul class="flex items-center gap-5 md:gap-7 font-semibold">
             <li class="top-menu">
               <a href="#">Home</a>
@@ -38,28 +38,39 @@
         <!-- Button Area  -->
         <div class="flex gap-5 md:gap-3">
           <button
-            class="bg-[#F44335] text-white py-2 px-4 rounded-md font-semibold hover:scale-105 transition-all duration-300"
+            class="bg-[#F44335] text-white sm:py-0.5 sm:px-2.5 sm:text-xs sm:font-normal md:py-2 md:px-4 rounded-md md:font-semibold md:text-base hover:scale-105 transition-all duration-300"
           >
             Register Interest
           </button>
-          <img class="size-8 md:size-fit" src="./image/moon.png" alt="" />
+          <!-- moon  -->
+          <button class="normal-mood dark:hidden" id="switch">
+            <i
+              class="fa-solid fa-moon sm:text-2xl md:text-4xl hover:scale-105 cursor-pointer"
+            ></i>
+          </button>
+          <!-- sun  -->
+          <button class="hidden dark:block" id="switch2">
+            <i
+              class="fa-solid fa-sun sm:text-2xl md:text-4xl text-white cursor-pointer hover:scale-105"
+            ></i>
+          </button>
         </div>
       </div>
     </header>
     <!-- Main Area Start  -->
     <main>
       <!-- Hero Area Start  -->
-      <section class="bg-[#FAFAFA] py-2 md:py-4 mt-4">
+      <section class="bg-[#FAFAFA] dark:bg-[#2D3142] py-2 md:py-4 mt-4">
         <div class="grid grid-cols-12 container mx-auto mt-5">
           <!-- Hero Area Left Content  -->
           <div class="col-span-8 lg:ml-10">
             <!-- Hero Top Title Area  -->
-            <h3 class="text-sm md:text-lg font-semibold">
+            <h3 class="text-sm md:text-lg font-semibold dark:text-white">
               Discover <span class="text-[#F44335]">-</span> Interact
               <span class="text-[#F44335]">-</span> Engage
             </h3>
             <!-- Hero Tittle Area  -->
-            <h1 class="text-3xl md:text-6xl font-bold mt-4">
+            <h1 class="text-3xl md:text-6xl font-bold mt-4 dark:text-white">
               Google <br />
               <span
                 class="text-[#F44335] border-b-4 border-b-[#F44335] leading-[50px] md:leading-[100px]"
@@ -70,7 +81,7 @@
             </h1>
             <!-- Hero Paragraph Area  -->
             <p
-              class="text-[#072125] py-3 md:py-6 w-[350px] text-sm md:w-[500px] md:text-base"
+              class="text-[#072125] py-3 md:py-6 w-[350px] text-sm md:w-[500px] md:text-base dark:text-white"
             >
               This is your path to a career in IT. In this program, you’ll learn
               in-demand skills with no degree or experience required.
@@ -78,44 +89,24 @@
             <!-- Hero Counter Area  -->
             <div class="flex items-center gap-10">
               <div>
-                <h2 class="text-[#00FF84] font-bold text-[22px] md:text-[36px]">
-                  438
-                </h2>
-                <p class="text-[#2D3142] font-semibold md:text-[20px]">
-                  Videos
-                </p>
+                <h2 class="hero-c-h2">438</h2>
+                <p class="hero-s-p">Videos</p>
               </div>
               <div>
-                <h2 class="text-[#00FF84] font-bold text-[22px] md:text-[36px]">
-                  151
-                </h2>
-                <p class="text-[#2D3142] font-semibold md:text-[20px]">
-                  Reading
-                </p>
+                <h2 class="hero-c-h2">151</h2>
+                <p class="hero-s-p">Reading</p>
               </div>
               <div>
-                <h2 class="text-[#00FF84] font-bold text-[22px] md:text-[36px]">
-                  108
-                </h2>
-                <p class="text-[#2D3142] font-semibold md:text-[20px]">
-                  Quizzes
-                </p>
+                <h2 class="hero-c-h2">108</h2>
+                <p class="hero-s-p">Quizzes</p>
               </div>
               <div>
-                <h2 class="text-[#00FF84] font-bold text-[22px] md:text-[36px]">
-                  24
-                </h2>
-                <p class="text-[#2D3142] font-semibold md:text-[20px]">
-                  Exercises
-                </p>
+                <h2 class="hero-c-h2">24</h2>
+                <p class="hero-s-p">Exercises</p>
               </div>
               <div>
-                <h2 class="text-[#00FF84] font-bold text-[22px] md:text-[36px]">
-                  4
-                </h2>
-                <p class="text-[#2D3142] font-semibold md:text-[20px]">
-                  Assigments
-                </p>
+                <h2 class="hero-c-h2">4</h2>
+                <p class="hero-s-p">Assigments</p>
               </div>
             </div>
             <!-- Hero Btn Area  -->
@@ -147,7 +138,7 @@
       <section class="py-5">
         <div class="container mx-auto flex items-center justify-evenly">
           <div class="w-[250px]">
-            <p>
+            <p class="dark:text-white">
               Pave your path to career success by gaining a professional Google
               certificate with the support of C4U
             </p>
@@ -165,11 +156,13 @@
       </section>
 
       <!-- Learn Area Start  -->
-      <section class="bg-[#FAFAFA] py-5 md:py-10 my-5 md:my-10 md:mx-14">
+      <section
+        class="bg-[#FAFAFA] dark:bg-[#2D3142] py-5 md:py-10 my-5 md:my-10 md:mx-14"
+      >
         <div class="grid grid-cols-12 gap-7 container mx-auto">
           <!-- Learn Left Content  -->
           <div
-            class="col-span-12 md:col-span-6 bg-white shadow-md border rounded-lg py-3 md:py-6"
+            class="col-span-12 md:col-span-6 bg-white shadow-md border rounded-lg py-3 md:py-6 dark:bg-gray-700 dark:text-white"
           >
             <!-- Title  -->
             <div class="custom-border">
@@ -215,14 +208,14 @@
 
           <!-- Learn Right Content  -->
           <div
-            class="col-span-12 md:col-span-6 bg-white shadow-md border rounded-lg"
+            class="col-span-12 md:col-span-6 bg-white shadow-md border rounded-lg dark:bg-gray-700 dark:text-white"
           >
             <div>
               <img src="./image/IT_social 1.png" alt="" />
             </div>
 
             <!-- Title Area  -->
-            <div class="custom-border">
+            <div class="custom-border py-3">
               <h2 class="custom-text">Skills you will gain</h2>
             </div>
 
@@ -246,13 +239,15 @@
       </section>
 
       <!--Job Certificate Area -->
-      <section class="bg-[#FAFAFA] -mt-10 py-10 md:py-20 md:mx-14">
+      <section
+        class="bg-[#FAFAFA] dark:bg-[#2D3142] -mt-10 py-10 md:py-20 md:mx-14"
+      >
         <div class="grid grid-cols-12 container mx-auto gap-2 md:gap-7">
           <!-- Left Content  -->
           <div
-            class="col-span-12 md:col-span-6 border rounded-lg pt-5 bg-white"
+            class="col-span-12 md:col-span-6 border rounded-lg pt-5 bg-white dark:bg-gray-700 dark:text-white"
           >
-            <div class="md:custom-border">
+            <div class="custom-border">
               <h2 class="custom-text">Jobs Assocaited with Certificate</h2>
             </div>
             <!-- List Item Area  -->
@@ -329,11 +324,13 @@
         >
           <!-- Left Content  -->
           <div>
-            <h2 class="text-sm md:text-5xl font-semibold">
+            <h2 class="text-sm md:text-3xl font-semibold dark:text-white">
               There are 5 Courses in this <br />
               Professional Certificate
             </h2>
-            <div class="py-5 md:py-10 flex items-center gap-3 md:gap-6">
+            <div
+              class="sm:grid sm:grid-cols-3 sm:gap-3 sm:py-3 md:flex md:items-center md:py-10"
+            >
               <li class="custom-btn">Course 1</li>
               <li class="custom-btn">Course 2</li>
               <li class="custom-btn">Course 3</li>
@@ -344,7 +341,7 @@
           <!-- Right Content  -->
           <div>
             <img
-              class="w-[250px] md:w-[300px] absolute left-[60%] bottom-[8%]"
+              class="w-[250px] md:w-[300px] absolute left-[60%] bottom-[5%]"
               src="./image/bradge.png"
               alt=""
             />
@@ -353,9 +350,9 @@
       </section>
 
       <!-- Course Area 1  -->
-      <section class="bg-[#FAFAFA] md:mx-14 mt-32">
+      <section class="bg-[#FAFAFA] dark:bg-[#2D3142] md:mx-14 mt-32">
         <div
-          class="bg-white overflow-hidden container mx-auto flex flex-col md:flex-row gap-5 md:gap-7 border rounded-2xl shadow-md"
+          class="bg-white dark:bg-gray-700 dark:text-white overflow-hidden container mx-auto flex flex-col md:flex-row gap-5 md:gap-7 border rounded-2xl shadow-md"
         >
           <!-- Left Content  -->
           <div class="bg-[#2D3142]">
@@ -433,7 +430,7 @@
             </h3>
 
             <!-- Course Paragraph  -->
-            <p class="text-[#072125] text-sm md:text-base py-5">
+            <p class="text-[#072125] text-sm md:text-base py-5 dark:text-white">
               This course is the first of a series that aims to prepare you for
               a role as an entry-level IT Support Specialist. In this course,
               you’ll be introduced to the world of Information Technology, or
@@ -605,9 +602,11 @@
       </section>
 
       <!-- Course Area 2  -->
-      <section class="bg-[#FAFAFA] md:mx-14 mt-36 sm:mt-28 lg:mt-[180px]">
+      <section
+        class="bg-[#FAFAFA] dark:bg-[#2D3142] md:mx-14 mt-36 sm:mt-28 lg:mt-[180px]"
+      >
         <div
-          class="bg-white overflow-hidden container mx-auto flex flex-col md:flex-row gap-5 md:gap-7 border rounded-2xl shadow-md"
+          class="bg-white dark:bg-gray-700 dark:text-white overflow-hidden container mx-auto flex flex-col md:flex-row gap-5 md:gap-7 border rounded-2xl shadow-md"
         >
           <!-- Left Content  -->
           <div class="bg-[#2D3142]">
@@ -685,7 +684,7 @@
             </h3>
 
             <!-- Course Paragraph  -->
-            <p class="text-[#072125] text-sm md:text-base py-5">
+            <p class="text-[#072125] text-sm md:text-base py-5 dark:text-white">
               This course is the first of a series that aims to prepare you for
               a role as an entry-level IT Support Specialist. In this course,
               you’ll be introduced to the world of Information Technology, or
@@ -857,9 +856,11 @@
       </section>
 
       <!-- Course Area 3  -->
-      <section class="bg-[#FAFAFA] md:mx-14 mt-28 md:mt-[150px] lg:mt-96">
+      <section
+        class="bg-[#FAFAFA] dark:bg-[#2D3142] md:mx-14 mt-28 md:mt-[150px] lg:mt-96"
+      >
         <div
-          class="bg-white overflow-hidden container mx-auto flex flex-col md:flex-row gap-5 md:gap-7 border rounded-2xl shadow-md"
+          class="bg-white dark:bg-gray-700 dark:text-white overflow-hidden container mx-auto flex flex-col md:flex-row gap-5 md:gap-7 border rounded-2xl shadow-md"
         >
           <!-- Left Content  -->
           <div class="bg-[#2D3142]">
@@ -937,7 +938,7 @@
             </h3>
 
             <!-- Course Paragraph  -->
-            <p class="text-[#072125] text-sm md:text-base py-5">
+            <p class="text-[#072125] text-sm md:text-base py-5 dark:text-white">
               This course is the first of a series that aims to prepare you for
               a role as an entry-level IT Support Specialist. In this course,
               you’ll be introduced to the world of Information Technology, or
@@ -1109,9 +1110,11 @@
       </section>
 
       <!-- Course Area 4  -->
-      <section class="bg-[#FAFAFA] md:mx-14 mt-28 md:mt-[150px] lg:mt-96">
+      <section
+        class="bg-[#FAFAFA] dark:bg-[#2D3142] md:mx-14 mt-28 md:mt-[150px] lg:mt-96"
+      >
         <div
-          class="bg-white overflow-hidden container mx-auto flex flex-col md:flex-row gap-5 md:gap-7 border rounded-2xl shadow-md"
+          class="bg-white dark:bg-gray-700 dark:text-white overflow-hidden container mx-auto flex flex-col md:flex-row gap-5 md:gap-7 border rounded-2xl shadow-md"
         >
           <!-- Left Content  -->
           <div class="bg-[#2D3142]">
@@ -1189,7 +1192,7 @@
             </h3>
 
             <!-- Course Paragraph  -->
-            <p class="text-[#072125] text-sm md:text-base py-5">
+            <p class="text-[#072125] text-sm md:text-base py-5 dark:text-white">
               This course is the first of a series that aims to prepare you for
               a role as an entry-level IT Support Specialist. In this course,
               you’ll be introduced to the world of Information Technology, or
@@ -1361,9 +1364,11 @@
       </section>
 
       <!-- Course Area 5  -->
-      <section class="bg-[#FAFAFA] md:mx-14 mt-36 sm:mt-28 lg:mt-[180px]">
+      <section
+        class="bg-[#FAFAFA] dark:bg-[#2D3142] md:mx-14 mt-36 sm:mt-28 lg:mt-[180px]"
+      >
         <div
-          class="bg-white overflow-hidden container mx-auto flex flex-col md:flex-row gap-5 md:gap-7 border rounded-2xl shadow-md"
+          class="bg-white dark:bg-gray-700 dark:text-white overflow-hidden container mx-auto flex flex-col md:flex-row gap-5 md:gap-7 border rounded-2xl shadow-md"
         >
           <!-- Left Content  -->
           <div class="bg-[#2D3142]">
@@ -1441,7 +1446,7 @@
             </h3>
 
             <!-- Course Paragraph  -->
-            <p class="text-[#072125] text-sm md:text-base py-5">
+            <p class="text-[#072125] text-sm md:text-base py-5 dark:text-white">
               This course is the first of a series that aims to prepare you for
               a role as an entry-level IT Support Specialist. In this course,
               you’ll be introduced to the world of Information Technology, or
@@ -1606,7 +1611,9 @@
         class="bg-[url('https://images.pexels.com/photos/6147022/pexels-photo-6147022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-cover bg-center py-20 mt-20 brightness-90"
       >
         <div class="container mx-auto">
-          <div class="bg-white w-[600px] py-10 border rounded-md ml-5 pl-5">
+          <div
+            class="bg-white dark:bg-gray-700 dark:text-white w-[600px] py-10 border rounded-md ml-5 pl-5"
+          >
             <i
               class="fa-solid fa-quote-left ml-5 text-base md:text-3xl text-[#F9CCC7]"
             ></i>
@@ -1634,7 +1641,7 @@
       <div class="footer-top container mx-auto pb-12 grid grid-cols-12">
         <!-- Footer Left Content  -->
         <div
-          class="col-span-4 flex flex-col lg:ml-14 justify-center gap-1 text-[#20484F]"
+          class="col-span-4 flex flex-col lg:ml-14 justify-center gap-1 text-[#20484F] dark:text-white"
         >
           <!-- Footer Logo  -->
           <a class="mb-1" href="./index.html">
@@ -1650,7 +1657,9 @@
         <!-- Footer Right Content  -->
         <div class="col-span-8 lg:mr-14 flex items-center justify-between">
           <!-- Home  -->
-          <div class="flex flex-col justify-center gap-2 text-[#20484F]">
+          <div
+            class="flex flex-col justify-center gap-2 text-[#20484F] dark:text-white"
+          >
             <h3 class="text-lg font-semibold mb-1 -mt-5">Home</h3>
             <li class="list-none">Collaborations</li>
             <li class="list-none">Statistics</li>
@@ -1658,7 +1667,9 @@
             <li class="list-none">Testimonials</li>
           </div>
           <!-- About Us  -->
-          <div class="flex flex-col justify-center gap-2 text-[#20484F]">
+          <div
+            class="flex flex-col justify-center gap-2 text-[#20484F] dark:text-white"
+          >
             <h3 class="text-lg font-semibold mb-1 -mt-5">About Us</h3>
             <li class="list-none">Collaborations</li>
             <li class="list-none">Statistics</li>
@@ -1666,7 +1677,9 @@
             <li class="list-none">Testimonials</li>
           </div>
           <!-- Upskill  -->
-          <div class="flex flex-col justify-center gap-2 text-[#20484F]">
+          <div
+            class="flex flex-col justify-center gap-2 text-[#20484F] dark:text-white"
+          >
             <h3 class="text-lg font-semibold mb-1 -mt-5">Upskill</h3>
             <li class="list-none">Collaborations</li>
             <li class="list-none">Statistics</li>
@@ -1674,7 +1687,9 @@
             <li class="list-none">Testimonials</li>
           </div>
           <!-- Contact Us  -->
-          <div class="flex flex-col justify-center gap-2 text-[#20484F]">
+          <div
+            class="flex flex-col justify-center gap-2 text-[#20484F] dark:text-white"
+          >
             <h3 class="text-lg font-semibold mb-1 -mt-5">Contact Us</h3>
             <li class="list-none">Collaborations</li>
             <li class="list-none">Statistics</li>
@@ -1686,10 +1701,24 @@
 
       <!-- Bottom Footer  -->
       <div class="bottom-footer border-t py-2">
-        <p class="text-center text-sm text-[#20484F]">
+        <p class="text-center text-sm text-[#20484F] dark:text-white">
           Copyright 2022 Creatives For You LTD
         </p>
       </div>
     </footer>
+
+    <!-- Custom Script  -->
+    <script>
+      const htmlTag = document.getElementById("htmlTag");
+      // normal mood icon script
+      document.getElementById("switch").addEventListener("click", function () {
+        htmlTag.classList.toggle("dark");
+      });
+
+      // dark mood icon script
+      document.getElementById("switch2").addEventListener("click", function () {
+        htmlTag.classList.toggle("dark");
+      });
+    </script>
   </body>
 </html>
